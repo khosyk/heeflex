@@ -4,3 +4,5 @@
   },
   "include": ["src"]
 }
+
+// 에디터로 하여금 component/TITLE 같은 식으로 읽게 해준다.

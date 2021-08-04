@@ -6,25 +6,26 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
-import Home from 'Screens/Home.js';
-import Movie from 'Screens/Movie';
-import Search from 'Screens/Search';
-import Tv from 'Screens/Tv';
-import Header from 'Components/Header';
+import Home from "../Home";
+import Search from "../Search";
+import TV from "../TV";
+import Header from "Components/Header";
+import Detail from "../Detail";
 
 export default () => {
-  return (
-    <Router>
-      <>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/tv" component={Tv} />
-          <Route path="/movie" component={Movie} />
-          <Route path="/search" component={Search} />
-          <Redirect from="*" to="/" />
-        </Switch>
-      </>
-    </Router>
-  );
+    return (
+        <Router>
+            <>
+                <Header />
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/tv" component={TV} />
+                    <Route path="/search" component={Search} />
+                    <Route path="/tv/:id" component={Detail} />
+                    <Route path="/movie/:id" component={Detail} />
+                    <Redirect from="*" to="/" />
+                </Switch>
+            </>
+        </Router>
+    );
 };
