@@ -14,18 +14,18 @@ import Detail from "../Detail";
 
 export default () => {
     return (
-        <Router>
-            <>
-                <Header />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/tv" component={TV} />
-                    <Route path="/search" component={Search} />
-                    <Route path="/tv/:id" component={Detail} />
-                    <Route path="/movie/:id" component={Detail} />
-                    <Redirect from="*" to="/" />
-                </Switch>
-            </>
-        </Router>
+      <Router>
+        <>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/tv" exact component={TV} />
+            <Route path="/search" component={Search} />
+            <Route path="/movie/:id" component={Detail} />
+            <Route path="/tv/:id" component={Detail} />
+            <Redirect from="*" to="/" />
+          </Switch>
+        </>
+      </Router>
     );
 };

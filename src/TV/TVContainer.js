@@ -18,14 +18,14 @@ export default class extends React.Component {
                 data: { results: airingToday },
             } = await tvApi.airingToday();
             const {
-                data: { results: latest },
-            } = await tvApi.latest();
+                data: {results: topRated}
+            } = await tvApi.topRated();
             const {
                 data: { results: popular },
             } = await tvApi.popular();
             this.setState({
                 airingToday,
-                latest,
+                topRated,
                 popular,
             });
         } catch (error) {
@@ -40,15 +40,16 @@ export default class extends React.Component {
     }
 
     render() {
-        const { airingToday, latest, popular, error, loading } = this.state;
-        return (
-            <TVPresenter
-                airingToday={airingToday}
-                latest={latest}
-                popular={popular}
-                error={error}
-                loading={loading}
-            />
-        );
+      const { airingToday, topRated, popular, error, loading } = this.state;
+   
+      return (
+        <TVPresenter
+          airingToday={airingToday}
+          topRated={topRated}
+          popular={popular}
+          error={error}
+          loading={loading}
+        />
+      );
     }
 }
