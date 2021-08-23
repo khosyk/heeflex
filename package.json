@@ -33,7 +33,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://heeflex.github.io/heeflex",
+  "homepage": "https://khosyk.github.io/heeflex",
   "browserslist": {
     "production": [
       ">0.2%",
