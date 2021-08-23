@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/heeflex/static/js/main.08f2e8ae.chunk.js",
+    "main.js.map": "/heeflex/static/js/main.08f2e8ae.chunk.js.map",
+    "runtime-main.js": "/heeflex/static/js/runtime-main.a605d442.js",
+    "runtime-main.js.map": "/heeflex/static/js/runtime-main.a605d442.js.map",
+    "static/js/2.b6c086a9.chunk.js": "/heeflex/static/js/2.b6c086a9.chunk.js",
+    "static/js/2.b6c086a9.chunk.js.map": "/heeflex/static/js/2.b6c086a9.chunk.js.map",
+    "index.html": "/heeflex/index.html",
+    "static/js/2.b6c086a9.chunk.js.LICENSE.txt": "/heeflex/static/js/2.b6c086a9.chunk.js.LICENSE.txt",
+    "static/media/imdb.8b13a62e.png": "/heeflex/static/media/imdb.8b13a62e.png",
+    "static/media/noImage.d59cf829.jpg": "/heeflex/static/media/noImage.d59cf829.jpg",
+    "static/media/rt.052742e1.png": "/heeflex/static/media/rt.052742e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a605d442.js",
+    "static/js/2.b6c086a9.chunk.js",
+    "static/js/main.08f2e8ae.chunk.js"
+  ]
+}
